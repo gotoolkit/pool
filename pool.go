@@ -9,7 +9,7 @@ import (
 
 type Factory func() (io.Closer, error)
 
-// Pool goroutine池
+// Pool 资源池
 type Pool struct {
 	m         sync.Mutex
 	resources chan io.Closer
